@@ -6248,6 +6248,146 @@
     },
     {
       "ret": "bool",
+      "name": "NPC_GetNodePointData",
+      "params": [
+        {
+          "name": "nodeId",
+          "type": "int"
+        },
+        {
+          "name": "pointId",
+          "type": "int"
+        },
+        {
+          "name": "x",
+          "type": "float*"
+        },
+        {
+          "name": "y",
+          "type": "float*"
+        },
+        {
+          "name": "z",
+          "type": "float*"
+        },
+        {
+          "name": "linkId",
+          "type": "uint16_t*"
+        },
+        {
+          "name": "areaId",
+          "type": "uint16_t*"
+        },
+        {
+          "name": "pointNodeId",
+          "type": "uint16_t*"
+        },
+        {
+          "name": "pathWidth",
+          "type": "uint8_t*"
+        },
+        {
+          "name": "floodFill",
+          "type": "uint8_t*"
+        },
+        {
+          "name": "flags",
+          "type": "uint32_t*"
+        }
+      ]
+    },
+    {
+      "ret": "bool",
+      "name": "NPC_GetNaviNodeData",
+      "params": [
+        {
+          "name": "nodeId",
+          "type": "int"
+        },
+        {
+          "name": "naviId",
+          "type": "int"
+        },
+        {
+          "name": "x",
+          "type": "float*"
+        },
+        {
+          "name": "y",
+          "type": "float*"
+        },
+        {
+          "name": "areaId",
+          "type": "uint16_t*"
+        },
+        {
+          "name": "pointNodeId",
+          "type": "uint16_t*"
+        },
+        {
+          "name": "directionX",
+          "type": "int8_t*"
+        },
+        {
+          "name": "directionY",
+          "type": "int8_t*"
+        },
+        {
+          "name": "flags",
+          "type": "uint32_t*"
+        }
+      ]
+    },
+    {
+      "ret": "int",
+      "name": "NPC_GetNodeLinkCount",
+      "params": [
+        {
+          "name": "nodeId",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "ret": "bool",
+      "name": "NPC_GetNodeLinkData",
+      "params": [
+        {
+          "name": "nodeId",
+          "type": "int"
+        },
+        {
+          "name": "linkId",
+          "type": "int"
+        },
+        {
+          "name": "targetAreaId",
+          "type": "uint16_t*"
+        },
+        {
+          "name": "targetNodeId",
+          "type": "uint16_t*"
+        },
+        {
+          "name": "naviAreaId",
+          "type": "uint16_t*"
+        },
+        {
+          "name": "naviNodeId",
+          "type": "uint16_t*"
+        },
+        {
+          "name": "length",
+          "type": "uint8_t*"
+        },
+        {
+          "name": "intersectionFlags",
+          "type": "uint8_t*"
+        }
+      ]
+    },
+    {
+      "ret": "bool",
       "name": "NPC_PlayNode",
       "params": [
         {
@@ -6272,6 +6412,40 @@
         },
         {
           "name": "setAngle",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "ret": "bool",
+      "name": "NPC_PlayNodeEx",
+      "params": [
+        {
+          "name": "npc",
+          "type": "void*"
+        },
+        {
+          "name": "nodeId",
+          "type": "int"
+        },
+        {
+          "name": "moveType",
+          "type": "int"
+        },
+        {
+          "name": "moveSpeed",
+          "type": "float"
+        },
+        {
+          "name": "radius",
+          "type": "float"
+        },
+        {
+          "name": "setAngle",
+          "type": "bool"
+        },
+        {
+          "name": "laneAware",
           "type": "bool"
         }
       ]
