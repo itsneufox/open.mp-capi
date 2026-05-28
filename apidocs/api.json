@@ -6447,6 +6447,10 @@
         {
           "name": "laneAware",
           "type": "bool"
+        },
+        {
+          "name": "smoothDriving",
+          "type": "bool"
         }
       ]
     },
