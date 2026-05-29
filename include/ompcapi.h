@@ -1323,6 +1323,21 @@ struct EventArgs_onNPCFinishNode {
 };
 typedef bool (*EventCallback_onNPCFinishNode)(struct EventArgs_onNPCFinishNode args);
 
+struct EventArgs_onNPCSelectNodeLink {
+    int size;
+    struct {
+        void** npc;
+        int* nodeId;
+        int* pointId;
+        int* linkId;
+        int* targetNodeId;
+        int* targetPointId;
+        int* targetFlags;
+        int* targetFloodFill;
+    } *list;
+};
+typedef bool (*EventCallback_onNPCSelectNodeLink)(struct EventArgs_onNPCSelectNodeLink args);
+
 struct EventArgs_onNPCChangeNode {
     int size;
     struct {

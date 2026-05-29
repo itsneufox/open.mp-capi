@@ -667,6 +667,44 @@
       ]
     },
     {
+      "name": "onNPCSelectNodeLink",
+      "badret": "false",
+      "args": [
+        {
+          "name": "npc",
+          "type": "void*"
+        },
+        {
+          "name": "nodeId",
+          "type": "int"
+        },
+        {
+          "name": "pointId",
+          "type": "int"
+        },
+        {
+          "name": "linkId",
+          "type": "int"
+        },
+        {
+          "name": "targetNodeId",
+          "type": "int"
+        },
+        {
+          "name": "targetPointId",
+          "type": "int"
+        },
+        {
+          "name": "targetFlags",
+          "type": "int"
+        },
+        {
+          "name": "targetFloodFill",
+          "type": "int"
+        }
+      ]
+    },
+    {
       "name": "onNPCChangeNode",
       "badret": "false",
       "args": [
